@@ -21,7 +21,7 @@ Here are the data for the project:
 
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-The first step of the project is to write an R script called `run_analysis.R` that does the following:
+The main goal of the project is to write an R script called `run_analysis.R` that does the following:
 
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -39,7 +39,7 @@ in the local, working directory.
 Steps to Reproduce
 ------------------
 Within R or RStudio, set your working directory to the directory containing
-the "UCI HAR Dataset" sub-directory and the `run_analysis.R` script, then
+the `UCI HAR Dataset` sub-directory and the `run_analysis.R` script, then
 source the script:
 
 ```r
@@ -49,7 +49,7 @@ source the script:
 Output
 ------
 After successful completetion, the script will output a tidy data set in
-a file named "tidyData.txt". This data can be read back into R with the
+a file named `tidyData.txt`. This data can be read back into R with the
 following command:
 
 ```r
@@ -58,6 +58,6 @@ following command:
 
 Repo Contents
 -------------
-* `codebook.md`: Information about raw and tidy data set
 * `README.md`: This file
+* `codebook.md`: Information about raw and tidy data set
 * `run_analysis.R`: R script to transform raw data into tidy data
