@@ -21,7 +21,7 @@ Here are the data for the project:
 
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-There is an R script called run_analysis.R that does the following. 
+The first step of the project is to write an R script called run_analysis.R that does the following:
 
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -29,6 +29,27 @@ There is an R script called run_analysis.R that does the following.
 * Appropriately labels the data set with descriptive variable names. 
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+Assumptions
+-----------
 
+The run_analysis.R script assumes that the data listed above has been 
+downloaded and unziped into the "UCI HAR Dataset" sub-directory 
+in the local, working directory.
+
+Steps to Reproduce
+------------------
+Within R or RStudio, set your working directory to the directory containing
+the "UCI HAR Dataset" sub-directory and the run_analysis.R script, then
+source the script:
+
+  source("run_analysis.R")
+
+Output
+------
+After successful completetion, the script will output a tidy data set in
+a file named "tidyData.txt". This data can be read back into R with the
+following command:
+
+  myData <- read.table("tidyData.txt", header = TRUE)
 
 

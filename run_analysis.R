@@ -1,4 +1,3 @@
-# In the assignment instructions it has " The code should have a file run_analysis.R in the main directory that can be run as long as the Samsung data is in your working directory" so you can assume that they are responsible for downloading it. A generally good plan though is making the starting conditions completely clear in your ReadMe "This script assume the data has been downloaded and the UCI HAR Dataset folder is in the working directory" kind of thing.
 
 ### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ###
