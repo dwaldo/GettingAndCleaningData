@@ -13,7 +13,7 @@ It is available for download at:
 
 The original data was grouped into a training set (21 subjects) and a 
 training data set (9 subjects). Each of these groups contained 3 files
-listing subject, activities, and 561 measurements, and 2947 observations.
+listing subject, activities, and 561 features, and 2947 observations.
 More details can be found in these files in `UCI HAR Dataset` sub-directory 
 of the archive listed above:
 
@@ -249,4 +249,10 @@ The original 81 columns labels were converted to:
 [80] "fBodyGyroscopeJerkMagnitudeSTD"              
 [81] "fBodyGyroscopeJerkMagnitudeMeanFrequency"
 ```
-3) 
+3) Finally, the data was summarized by taking the mean of each measurement 
+(columns 3-81) for each activity for each subject. This transformed the 
+original 2947 raw observations to 180 (30 subjects x 6 activities) summary
+statistics.
+
+
+
