@@ -56,3 +56,8 @@ following command:
   myData <- read.table("tidyData.txt", header = TRUE)
 ```
 
+Repo Contents
+-------------
+* `codebook.md`: Information about raw and tidy data set
+* `README.md`: This file
+* `run_analysis.R`: R script to transform raw data into tidy data
