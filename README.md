@@ -49,15 +49,17 @@ source the script:
 Output
 ------
 After successful completetion, the script will output a tidy data set in
-a file named `tidyData.txt`. This data can be read back into R with the
-following command:
+in the working directory in a file named `tidyData.txt`. This data can be 
+read back into R with the following command:
 
 ```r
   myData <- read.table("tidyData.txt", header = TRUE)
 ```
 
+It contains 180 (30 subjects x 6 activities) observations x 81 features/variables.
+
 Repo Contents
 -------------
-* `README.md`: This file
+* `README.md`: This file discribing the project and code execution
 * `codebook.md`: Information about raw and tidy data set
 * `run_analysis.R`: R script to transform raw data into tidy data

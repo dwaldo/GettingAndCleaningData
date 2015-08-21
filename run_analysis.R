@@ -159,12 +159,12 @@ trunData$Activity <- factor(
 ### is quite cumbersome to type, and has mixed-case, it is quite readable and
 ### can be scanned quickly by the reader.
 ###
-### Labels that begin with "Freq" refer to "Frequency"
 ### Labels that begin with "t" refer to "Time"
 ### Labels that contain "Gyro" refer to "Gyroscopic"
 ### Labels that contain "BodyBody" is a typo for "Body"
 ### Labels that contain "Mag" refer to "Magnitude"
 ### Labels that contain "-mean()" refer to "Mean"
+### Labels that contain "-meanFreq()" refer to "MeanRrequency"
 ### Labels that contain "-std()" refer to "STD" (StandardDeviation)
 featureNames <- names(trunData)
 featureNames <- gsub("^t", "Time", featureNames)
@@ -190,9 +190,3 @@ tidyData <- aggregate(
 )
 tidyData <- tidyData[order( tidyData$Activity, tidyData$Subject),]
 write.table(tidyData, file = "tidyData.txt", row.names = FALSE)
-
-#A person wanting to make life easy for their marker would give the code for reading the file back into R in the readMe.
-
-### The file can be read into R with the command below. It has
-### 180 (30 subjects x 6 activities) observations x 81 features/variables.
-### myData <- read.table("tidyData.txt", header = TRUE)
