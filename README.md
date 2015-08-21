@@ -61,6 +61,6 @@ features/variables. See the `codebook.md` file for more informantion.
 
 Repo Contents
 -------------
-* `README.md`: This file discribing the project and code execution
-* `codebook.md`: Information about raw and tidy data set
-* `run_analysis.R`: R script to transform raw data into tidy data
+* `README.md`: This file describing the project and code execution
+* `codebook.md`: Information about the original data, and the raw and tidy data processing process
+* `run_analysis.R`: R script to transform raw data into tidy data set
