@@ -33,7 +33,7 @@ Assumptions
 -----------
 
 The `run_analysis.R` script assumes that the data listed above has been 
-downloaded and unziped into the "UCI HAR Dataset" sub-directory 
+downloaded and unziped into the `UCI HAR Dataset` sub-directory 
 in the local, working directory.
 
 Steps to Reproduce
@@ -56,7 +56,8 @@ read back into R with the following command:
   myData <- read.table("tidyData.txt", header = TRUE)
 ```
 
-It contains 180 (30 subjects x 6 activities) observations x 81 features/variables.
+It contains 180 (30 subjects x 6 activities) observations x 81 
+features/variables. See the `codebook.md` file for more informantion.
 
 Repo Contents
 -------------
