@@ -110,9 +110,8 @@ colnames(totalData) <- c("Subject", "Activity", featureLabels$V2)
 ### for each measurement. 
 ### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 ### 
-### For mean measurements, I choose to include only measurements labeled with "mean()"
+### For mean measurements, I choose to include measurements labeled with "mean()"
 ### In the feature_info.txt file, these were described as:
 ###    mean(): Mean value
 ###
@@ -156,16 +155,17 @@ trunData$Activity <- factor(
 ###
 ###    "TimeGravityAccelerometerMagnitudeMean"
 ###
-### is quite cumbersome to type, and has mixed-case, it is quite readable and
+### is quite cumbersome to type, and has mixed-case, but it is quite readable and
 ### can be scanned quickly by the reader.
 ###
 ### Labels that begin with "t" refer to "Time"
+### Labels that contain "Acc" refer to "Accelerometer"
 ### Labels that contain "Gyro" refer to "Gyroscopic"
-### Labels that contain "BodyBody" is a typo for "Body"
 ### Labels that contain "Mag" refer to "Magnitude"
+### Labels that contain "BodyBody" is a typo for "Body"
 ### Labels that contain "-mean()" refer to "Mean"
-### Labels that contain "-meanFreq()" refer to "MeanRrequency"
-### Labels that contain "-std()" refer to "STD" (StandardDeviation)
+### Labels that contain "-meanFreq()" refer to "MeanFrequency"
+### Labels that contain "-std()" refer to "STD"
 featureNames <- names(trunData)
 featureNames <- gsub("^t", "Time", featureNames)
 featureNames <- gsub("Acc", "Accelerometer", featureNames)
