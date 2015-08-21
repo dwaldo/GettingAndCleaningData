@@ -151,8 +151,8 @@ LAYING
 labels. I choose to use descriptive label names based on readability, 
 not ease of typing or input. Granted, a lable like:
 ```r
-"TimeGravityAccelerometerMagnitudeMean"
-`
+TimeGravityAccelerometerMagnitudeMean
+```
 is quite cumbersome to type, but it is quite readable and can be visually
 scanned quickly by the reader. This relabeling followed these rules:
 
