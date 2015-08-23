@@ -252,7 +252,8 @@ The original 81 columns labels were converted to:
 3) Finally, the data was summarized by taking the mean of each measurement 
 (columns 3-81) for each activity for each subject. This transformed the 
 original 2947 raw observations to 180 (30 subjects x 6 activities) summary
-statistics.
-
+statistics. The units of these mean statistics are the same as those of the
+original data that are listed in the `features_info.txt` file of the 
+original data archive.
 
 
