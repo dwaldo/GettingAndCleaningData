@@ -9,7 +9,7 @@ with, and clean a data set. The goal is to prepare tidy data that can be
 used for later analysis. 
 
 One of the most exciting areas in all of data science right now is wearable 
-computing - see for example this article . Companies like Fitbit, Nike, 
+computing - see for example this article. Companies like Fitbit, Nike, 
 and Jawbone Up are racing to develop the most advanced algorithms to 
 attract new users. The data for this project represents data collected 
 from the accelerometers from the Samsung Galaxy S smartphone. 
@@ -33,7 +33,7 @@ Assumptions
 -----------
 
 The `run_analysis.R` script assumes that the data listed above has been 
-downloaded and unziped into the `UCI HAR Dataset` sub-directory 
+downloaded and unzipped into the `UCI HAR Dataset` sub-directory 
 in the local, working directory.
 
 Steps to Reproduce
@@ -48,7 +48,7 @@ source the script:
 
 Output
 ------
-After successful completetion, the script will output a tidy data set in
+After successful completion, the script will output a tidy data set in
 in the working directory in a file named `tidyData.txt`. This data can be 
 read back into R with the following command:
 
@@ -57,7 +57,7 @@ read back into R with the following command:
 ```
 
 It contains 180 (30 subjects x 6 activities) observations x 81 
-features/variables. See the `codebook.md` file for more informantion.
+features/variables. See the `codebook.md` file for more information.
 
 Repo Contents
 -------------
