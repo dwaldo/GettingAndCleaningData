@@ -149,7 +149,7 @@ LAYING
 ```
 2) The feature/column abbreviated labels were converted to easier-to-read 
 labels. I choose to use descriptive label names based on readability, 
-not ease of typing or input. Granted, a lable like:
+not ease of typing or input. Granted, a label like:
 ```r
 TimeGravityAccelerometerMagnitudeMean
 ```
